@@ -6,13 +6,72 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .landing {
   height: 100vh;
+  display: flex;
+}
+
+/* Left side of the form  */
+
+.landing-left {
+  position: relative;
   overflow: hidden;
 }
 
 .landing-background {
   max-height:100vh;
+  opacity: 90%;
+}
+
+.landing-banner,
+.landing-left-footer {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-banner {
+  font-size: 9.5rem;
+  align-items: center;
+  top: 15%;
+}
+
+.landing-banner-background,
+.landing-left-footer-background
+{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 90%;
+}
+
+.landing-banner-icon {
+  max-height: 200px;
+}
+
+.landing-banner-header {
+  font-family: 'Norse Bold';
+}
+
+.landing-left-footer {
+  bottom: 0px;
+  padding: 10px;
+}
+
+.landing-left-footer a {
+  color: white;
+  margin: 0px 5px;
+}
+
+/* Right side of landing  */
+
+.landing-right {
+
 }
