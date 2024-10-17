@@ -133,3 +133,31 @@ body {
   width: 100%;
   border: 1px solid lightgray;
 }
+
+/* Button and login */
+
+#main-form-button {
+  border: none;
+  color: white;
+  background-color: #596D48;
+  padding: 15px 25px;
+  max-width: 200px;
+  border-radius: 6px;
+  margin: 20px 50px;
+}
+
+#main-form-button:hover {
+  cursor: pointer;
+}
+
+.swap-to-login {
+  padding: 20px 50px;
+}
+
+.login {
+  color: #596D48;
+}
+
+.login:hover {
+  cursor: pointer;
+}
