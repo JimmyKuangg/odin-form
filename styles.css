@@ -6,7 +6,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .landing {
@@ -19,11 +19,14 @@ body {
 .landing-left {
   position: relative;
   overflow: hidden;
+  flex: 1 1 55%;
 }
 
 .landing-background {
-  max-height:100vh;
+  height: 100%;
+  width: 100%;
   opacity: 90%;
+  object-fit: cover;
 }
 
 .landing-banner,
@@ -33,12 +36,13 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 20px;
 }
 
 .landing-banner {
-  font-size: 9.5rem;
+  font-size: 6.8rem;
   align-items: center;
-  top: 15%;
+  top: 13%;
 }
 
 .landing-banner-background,
@@ -53,7 +57,7 @@ body {
 }
 
 .landing-banner-icon {
-  max-height: 200px;
+  max-height: 120px;
 }
 
 .landing-banner-header {
@@ -62,7 +66,6 @@ body {
 
 .landing-left-footer {
   bottom: 0px;
-  padding: 10px;
 }
 
 .landing-left-footer a {
@@ -73,5 +76,60 @@ body {
 /* Right side of landing  */
 
 .landing-right {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafc
+}
 
+.landing-right-intro {
+  padding: 20px 50px;
+  padding-top: calc(100px - 1.5vh);
+}
+
+.landing-right-intro p {
+  max-width: 65%;
+  font-size: calc(1rem + 0.25vw);
+  font-weight: 600;
+}
+
+/* Form styling */
+
+.landing-right-form {
+  background-color: #ffffff;
+  padding: 1.5vh 50px;
+  box-shadow: 0 5px 2px -2px lightgray;
+}
+
+.landing-right-form {
+  font-size: calc(.5rem + 0.2vw);
+}
+
+.landing-right-form form{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  max-width: 230px;
+  flex: 1 0 50%;
+  margin: 20px 60px 20px 0px;
+}
+
+.form-input label {
+  text-transform: uppercase;
+  color: #84878c;
+  font-weight: bold;
+}
+
+.form-input input {
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  border: 1px solid lightgray;
 }
